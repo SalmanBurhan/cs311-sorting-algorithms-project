@@ -1,16 +1,22 @@
-all: main
+OBJS	= main.o sorting.o utils.o
+SOURCE	= main.cpp sorting.cpp utils.cpp
+HEADER	= sorting.h table.h utils.h
+OUT	= main
+CC	 = g++
+FLAGS	 = -g -c -Wall -Wextra
+LFLAGS	 = 
 
-CXX = clang++
-override CXXFLAGS += -g -Wno-everything
+all: $(OBJS)
+	$(CC) -g $(OBJS) -o $(OUT) $(LFLAGS)
 
-SRCS = $(shell find . -name '.ccls-cache' -type d -prune -o -type f -name '*.cpp' -print | sed -e 's/ /\\ /g')
-HEADERS = $(shell find . -name '.ccls-cache' -type d -prune -o -type f -name '*.h' -print)
+main.o: main.cpp table.h
+	$(CC) $(FLAGS) main.cpp -std=c++11
 
-main: $(SRCS) $(HEADERS)
-	$(CXX) $(CXXFLAGS) $(SRCS) -o "$@"
+sorting.o: sorting.cpp
+	$(CC) $(FLAGS) sorting.cpp -std=c++11
 
-main-debug: $(SRCS) $(HEADERS)
-	$(CXX) $(CXXFLAGS) -O0 $(SRCS) -o "$@"
+utils.o: utils.cpp
+	$(CC) $(FLAGS) utils.cpp -std=c++11
 
 clean:
-	rm -f main main-debug
+	rm -f $(OBJS) $(OUT)

@@ -11,8 +11,8 @@
  * @param[in] size - The Size Of The Aforementioned Array
  */
 void insertionSort(int array[], int size) {
-  for (int n = 0; n < size; n++) {
-    int e = array[size];
+  for (int n = 1; n < size; n++) {
+    int e = array[n];
     int j = n - 1;
 
     while (e < array[j] && j >= 0) {
@@ -23,27 +23,6 @@ void insertionSort(int array[], int size) {
     array[j + 1] = e;
   }
 }
-
-/*
- * @brief Original Insertion Sort Implementation
- * Author: Alecsander Gonzalez
-
-//insertion sort
-void insertionSort(int array[], int index)
-{
-  for(int i=lowindex; i<index + 1; i++)
-    {
-        int temp = array[i];
-        int j= i-1;
-        while(j>=0 && temp <= array[j])    //lowest sinks
-        {
-            array[j+1] = array[j];
-            j = j-1;
-        }
-        array[j+1] = temp;
-    }
-}
- */
 
 /****************** END *********************
 ******* INSERTION SORT IMPLEMENTATION *******

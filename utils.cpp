@@ -13,8 +13,10 @@ void fillAsc(int arry[], int size) {
 
 // for filling an array in decending order
 void fillDec(int arry[], int size) {
-  for (int i = size - 1; i >= 0; i--) {
-    arry[i] = i;
+  int j = size - 1;
+  for (int i = 0; i < size; i++) {
+    arry[i] = j;
+    j--;
   }
 }
 

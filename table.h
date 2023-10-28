@@ -3,6 +3,7 @@
 /* Print Helper Libraries */
 #include <iomanip>
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -10,14 +11,22 @@ using namespace std;
 ********** TABLE HELPER FUNCTIONS ***********
 ********************************************/
 
+/*** TABLE COLUMN WIDTH ***/
+const int COLUMN_WIDTH = 15;
+/**************************/
+
 /**
  * @brief Append Column Value To Current Result Table Row
  *
  * @param[in] t - Some Appended Generic `T`
  */
 template <typename T>
-void printTableElement(T t) {
-  cout << left << setw(20) << setfill(' ') << t;
+void appendTableRow(T t) {
+  if (is_arithmetic<T>::value) {
+    cout << left << setw(COLUMN_WIDTH) << setfill(' ') << fixed << setprecision(8) << t;
+  } else {
+    cout << left << setw(COLUMN_WIDTH) << setfill(' ') << t;
+  }
 }
 
 /**
@@ -29,21 +38,26 @@ void printTableElement(T t) {
  * @param[in] runtime - Calculated Runtime
  */
 template <typename T, typename U, typename V>
-void printTableRow(T method, T order, U size, V runtime, V clocktime) {
-  printTableElement(method);
-  printTableElement(order);
-  printTableElement(size);
-  printTableElement(runtime);
-  printTableElement(clocktime);
+void tableRow(T method, T order, U size, V runtime) {
+  appendTableRow(method);
+  appendTableRow(order);
+  appendTableRow(size);
+  appendTableRow(runtime);
   cout << endl;
 }
 
 /**
  * @brief Print The Column Names Of Results Table
  */
-void printTableHeader() {
-  printTableRow("METHOD", "ORDER", "SIZE", "RUNTIME", "CLOCKTIME");
-  cout << endl;
+void tableHeader() {
+  tableRow("METHOD", "ORDER", "SIZE", "RUNTIME");
+}
+
+/**
+ * @brief Print An Empty Table Row
+ */
+void tableSectionSeparator() {
+  tableRow("", "", "", "");
 }
 
 /******************* END ********************

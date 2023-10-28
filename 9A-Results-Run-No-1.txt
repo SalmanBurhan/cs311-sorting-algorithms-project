@@ -1,0 +1,126 @@
+METHOD         ORDER          SIZE           RUNTIME        
+Quick          Ascending      1              0.00016600     
+Insertion      Ascending      1              0.00004200     
+Quick          Descending     1              0.00004200     
+Insertion      Descending     1              0.00004100     
+Quick          Random         1              0.00004100     
+Insertion      Random         1              0.00004200     
+                                                            
+Quick          Ascending      2              0.00012500     
+Insertion      Ascending      2              0.00012500     
+Quick          Descending     2              0.00012500     
+Insertion      Descending     2              0.00012500     
+Quick          Random         2              0.00012500     
+Insertion      Random         2              0.00008300     
+                                                            
+Quick          Ascending      4              0.00033400     
+Insertion      Ascending      4              0.00016600     
+Quick          Descending     4              0.00041600     
+Insertion      Descending     4              0.00025000     
+Quick          Random         4              0.00029200     
+Insertion      Random         4              0.00020900     
+                                                            
+Quick          Ascending      8              0.00062500     
+Insertion      Ascending      8              0.00029200     
+Quick          Descending     8              0.00070800     
+Insertion      Descending     8              0.00050000     
+Quick          Random         8              0.00050000     
+Insertion      Random         8              0.00033300     
+                                                            
+Quick          Ascending      16             0.00166600     
+Insertion      Ascending      16             0.00033300     
+Quick          Descending     16             0.00154200     
+Insertion      Descending     16             0.00104200     
+Quick          Random         16             0.00116600     
+Insertion      Random         16             0.00091700     
+                                                            
+Quick          Ascending      32             0.00570800     
+Insertion      Ascending      32             0.00054200     
+Quick          Descending     32             0.00475000     
+Insertion      Descending     32             0.00362500     
+Quick          Random         32             0.00258300     
+Insertion      Random         32             0.00225000     
+                                                            
+Quick          Ascending      64             0.01995800     
+Insertion      Ascending      64             0.00083300     
+Quick          Descending     64             0.01508300     
+Insertion      Descending     64             0.01279200     
+Quick          Random         64             0.00604200     
+Insertion      Random         64             0.00695800     
+                                                            
+Quick          Ascending      128            0.09520800     
+Insertion      Ascending      128            0.00145800     
+Quick          Descending     128            0.05425000     
+Insertion      Descending     128            0.04200000     
+Quick          Random         128            0.01416700     
+Insertion      Random         128            0.02500000     
+                                                            
+Quick          Ascending      256            0.49212500     
+Insertion      Ascending      256            0.00275000     
+Quick          Descending     256            0.26241700     
+Insertion      Descending     256            0.06666700     
+Quick          Random         256            0.01787500     
+Insertion      Random         256            0.03445800     
+                                                            
+Quick          Ascending      512            0.57862500     
+Insertion      Ascending      512            0.00225000     
+Quick          Descending     512            0.41641600     
+Insertion      Descending     512            0.25620800     
+Quick          Random         512            0.03937500     
+Insertion      Random         512            0.13604200     
+                                                            
+Quick          Ascending      1024           2.29716700     
+Insertion      Ascending      1024           0.00437500     
+Quick          Descending     1024           1.63520800     
+Insertion      Descending     1024           1.51687500     
+Quick          Random         1024           0.15320800     
+Insertion      Random         1024           0.83958300     
+                                                            
+Quick          Ascending      2048           10.35654100    
+Insertion      Ascending      2048           0.01054200     
+Quick          Descending     2048           7.81066600     
+Insertion      Descending     2048           4.56141700     
+Quick          Random         2048           0.23895800     
+Insertion      Random         2048           2.31029200     
+                                                            
+Quick          Ascending      4096           32.57641600    
+Insertion      Ascending      4096           0.01279100     
+Quick          Descending     4096           19.25679200    
+Insertion      Descending     4096           11.30112500    
+Quick          Random         4096           0.30362500     
+Insertion      Random         4096           5.52608300     
+                                                            
+Quick          Ascending      8192           101.12779200   
+Insertion      Ascending      8192           0.02487500     
+Quick          Descending     8192           72.25287500    
+Insertion      Descending     8192           44.07820800    
+Quick          Random         8192           0.62087500     
+Insertion      Random         8192           22.24508300    
+                                                            
+Quick          Ascending      16384          403.64175000   
+Insertion      Ascending      16384          0.04791700     
+Quick          Descending     16384          286.49658400   
+Insertion      Descending     16384          177.97183300   
+Quick          Random         16384          1.32966700     
+Insertion      Random         16384          88.58025000    
+                                                            
+Quick          Ascending      32768          1620.27779200  
+Insertion      Ascending      32768          0.09504200     
+Quick          Descending     32768          1148.24725000  
+Insertion      Descending     32768          712.08454200   
+Quick          Random         32768          2.81020900     
+Insertion      Random         32768          357.78241700   
+                                                            
+Quick          Ascending      65536          6517.90470800  
+Insertion      Ascending      65536          0.19133300     
+Quick          Descending     65536          4532.15787500  
+Insertion      Descending     65536          2848.92858300  
+Quick          Random         65536          5.90837500     
+Insertion      Random         65536          1415.37691600  
+                                                            
+Quick          Ascending      131072         26100.70720800 
+Insertion      Ascending      131072         0.40720800     
+Quick          Descending     131072         18195.55712500 
+Insertion      Descending     131072         11449.34112500 
+Quick          Random         131072         12.99645800    
+Insertion      Random         131072         5812.63191600  
